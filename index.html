@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Tuition Centre - Special Children</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ASHAKIRAN</h1>
+    <h2>A Tuition Centre - Only for Special Children</h2>
+  </header>
+
+  <main>
+    <form id="teacher-form">
+      <h2>Teacher Information</h2>
+
+      <!-- Passport Size Photo Upload -->
+      <div class="form-group">
+        <label for="photo">Upload Passport Size Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+      </div>
+
+      <!-- Personal Details -->
+      <div class="form-group">
+        <label for="teacher-name">Teacher's Name:</label>
+        <input type="text" id="teacher-name" name="teacher-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mother-name">Mother's Name:</label>
+        <input type="text" id="mother-name" name="mother-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="religion">Religion:</label>
+        <input type="text" id="religion" name="religion" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="other" required> Other</label>
+      </div>
+
+      <div class="form-group">
+        <label>Marital Status:</label>
+        <label><input type="radio" name="marital-status" value="single" required> Single</label>
+        <label><input type="radio" name="marital-status" value="married" required> Married</label>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Qualification Table -->
+      <h3>Qualification Details</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Exam</th>
+            <th>Board</th>
+            <th>Passing Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10th</td>
+            <td><input type="text" name="10th-board" required></td>
+            <td><input type="number" name="10th-year" required></td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td><input type="text" name="12th-board" required></td>
+            <td><input type="number" name="12th-year" required></td>
+          </tr>
+          <tr>
+            <td>B.Com</td>
+            <td><input type="text" name="bcom-board" required></td>
+            <td><input type="number" name="bcom-year" required></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Hobbies and Languages -->
+      <div class="form-group">
+        <label for="hobbies">Hobbies:</label>
+        <textarea id="hobbies" name="hobbies" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="languages">Languages Known:</label>
+        <textarea id="languages" name="languages" rows="3"></textarea>
+      </div>
+
+      <!-- Date -->
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <!-- Terms and Conditions -->
+      <h3>Terms and Conditions</h3>
+      <div class="terms">
+        <ol>
+          <li>Come on time every day; otherwise, you will have to pay a fine for being late.</li>
+          <li>Do not use the phone while working.</li>
+          <li>If you are looking for a job, inform me one month in advance.</li>
+          <li>If you search for a job without informing, you will not get your salary for that month.</li>
+        </ol>
+      </div>
+
+      <!-- Signature Field -->
+      <div class="form-group">
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature" placeholder="Sign here" required>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
